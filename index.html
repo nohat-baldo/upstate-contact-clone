@@ -1,12 +1,12 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Upstate Clones Contact Page</title>
-  <meta name="robots" content="noindex, follow">
-  <meta name="description" content="This page mimics the broken /contact/ page on UpstateClones.com.">
-  <link rel="canonical" href="https://upstateclones.com/contact/">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Upstate Clones</title>
+  <meta name="robots" content="noindex, follow" />
+  <meta name="description" content="Get in touch with Upstate Clones to place orders, ask questions, or get support." />
+  <link rel="canonical" href="https://upstateclones.com/contact/" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -17,21 +17,43 @@
       color: #222;
     }
     h1 {
-      color: #c0392b;
+      color: #2c3e50;
     }
-    p {
-      margin-bottom: 16px;
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
     }
-    .note {
-      font-size: 0.9em;
-      color: #666;
+    button {
+      background-color: #27ae60;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #219150;
     }
   </style>
 </head>
 <body>
-  <h1>No Results Found</h1>
-  <p>The page you requested could not be found. Try refining your search, or use the navigation above to locate the post.</p>
-  <p class="note">This is a mirrored clone of the /contact/ page from UpstateClones.com, which currently returns a 404 error.</p>
-  <p class="note">See the original page here: <a href="https://upstateclones.com/contact/" target="_blank" rel="nofollow noopener">https://upstateclones.com/contact/</a></p>
+  <h1>Contact Upstate Clones</h1>
+  <p>Have questions or want to place an order? Use the form below and we'll get back to you.</p>
+  
+  <form>
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Your name" />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="you@example.com" />
+
+    <label for="message">Message</label>
+    <textarea id="message" rows="5" placeholder="Type your message here..."></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
 </body>
 </html>
